@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/customActionBar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionMenuTextColor">@color/colorActionBarText</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/customActionBar</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionMenuTextColor">@color/colorActionBarText</item>
+    </style>
+
+    <style name="customActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/colorActionBar</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:titleTextStyle">@style/ActionBarTextStyle</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/colorActionBar</item>
+        <item name="elevation">0dp</item>
+        <item name="titleTextStyle">@style/ActionBarTextStyle</item>
+    </style>
+
+    <style name="ActionBarTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorActionBarText</item>
+    </style>
+
+</resources>
